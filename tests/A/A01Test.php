@@ -11,12 +11,17 @@ use PHPUnit\Framework\TestCase;
  * @version 0.0.1
  * @package \Gmc\Constants
  */
-class A01 extends TestCase
+class A01Test extends TestCase
 {
 
 	public function sheHeItProvider(): array
 	{
-
+		return [
+			[
+				"He do not have permission",
+				"He does not have permission"
+			]
+		];
 	}
 
 	/**
@@ -25,7 +30,7 @@ class A01 extends TestCase
 	 * @param string $expectedResult
 	 * @return void
 	 */
-	public function sheHeItTest(string $plainText, string $expectedResult): void
+	public function testSheHeIt(string $plainText, string $expectedResult): void
 	{
 		$obj = new Gmc($plainText);
 		if ($obj->check()) {
