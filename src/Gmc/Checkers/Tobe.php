@@ -30,7 +30,7 @@ class Tobe extends CheckerFoundation
 			$text = implode("", $m);
 		}
 
-		while (preg_match("/(^|.*[\\s\\t]+)(you|we|they)([\\s\\t]+)(\*?are\*?(?:n\'t|[\\s\\t]+not))([\\s\\t]+)(have)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
+		while (preg_match("/(^|.*[\\s\\t]+)(you|we|they)([\\s\\t]+)(\*?are\*?|does)(n\'t|[\\s\\t]+not)([\\s\\t]+)(have)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
 			unset($m[0]);
 			$m[4] = gmc_corrector("do");
 			$text = implode("", $m);

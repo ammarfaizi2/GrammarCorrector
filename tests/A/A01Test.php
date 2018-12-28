@@ -13,7 +13,55 @@ use PHPUnit\Framework\TestCase;
  */
 class A01Test extends TestCase
 {
+	/**
+	 * @dataProvider h01SheHeItProvider
+	 * @param string $plainText
+	 * @param string $expectedResult
+	 * @return void
+	 */
+	public function testh01SheHeIt(string $plainText, string $expectedResult): void
+	{
+		$obj = new Gmc($plainText);
+		if ($obj->check()) {
+			$this->assertEquals($obj->getResult(), $expectedResult);
+		} else {
+			$this->assertEquals($plainText, $expectedResult);
+		}
+	}
 
+	/**
+	 * @dataProvider h01TheyWeIYouProvider
+	 * @param string $plainText
+	 * @param string $expectedResult
+	 * @return void
+	 */
+	public function testh01TheyWeIYou(string $plainText, string $expectedResult): void
+	{
+		$obj = new Gmc($plainText);
+		if ($obj->check()) {
+			$this->assertEquals($obj->getResult(), $expectedResult);
+		} else {
+			$this->assertEquals($plainText, $expectedResult);
+		}
+	}
+
+	/**
+	 * @return array
+	 */
+	public function h01TheyWeIYouProvider(): array
+	{
+		return [
+			// You subject
+			[
+				"You are not have permission",
+				"You do not have permission"
+			],
+		];
+	}
+
+	/**
+	 * @return array
+	 */
 	public function h01SheHeItProvider(): array
 	{
 		return [
@@ -95,21 +143,5 @@ class A01Test extends TestCase
 				"It doesn't have permission"
 			]
 		];
-	}
-
-	/**
-	 * @dataProvider h01SheHeItProvider
-	 * @param string $plainText
-	 * @param string $expectedResult
-	 * @return void
-	 */
-	public function testh01SheHeItProvider(string $plainText, string $expectedResult): void
-	{
-		$obj = new Gmc($plainText);
-		if ($obj->check()) {
-			$this->assertEquals($obj->getResult(), $expectedResult);
-		} else {
-			$this->assertEquals($plainText, $expectedResult);
-		}
 	}
 }
