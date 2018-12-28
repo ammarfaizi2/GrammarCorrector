@@ -75,6 +75,88 @@ class A01Test extends TestCase
 			[
 				"You doesn't have permission",
 				"You don't have permission",
+			],
+
+			// We subject
+			[
+				"We are not have permission",
+				"We do not have permission"
+			],
+			[
+				"We is not have permission",
+				"We do not have permission",
+			],
+			[
+				"We does not have permission",
+				"We do not have permission",
+			],
+			[
+				"We aren't have permission",
+				"We don't have permission",
+			],
+			[
+				"We isn't have permission",
+				"We don't have permission",
+			],
+			[
+				"We doesn't have permission",
+				"We don't have permission",
+			],
+
+			// They subject
+			[
+				"They are not have permission",
+				"They do not have permission"
+			],
+			[
+				"They is not have permission",
+				"They do not have permission",
+			],
+			[
+				"They does not have permission",
+				"They do not have permission",
+			],
+			[
+				"They aren't have permission",
+				"They don't have permission",
+			],
+			[
+				"They isn't have permission",
+				"They don't have permission",
+			],
+			[
+				"They doesn't have permission",
+				"They don't have permission",
+			],
+
+			// I subject
+			[
+				"I am not have permission",
+				"I do not have permission"
+			],
+			[
+				"I are not have permission",
+				"I do not have permission"
+			],
+			[
+				"I is not have permission",
+				"I do not have permission",
+			],
+			[
+				"I does not have permission",
+				"I do not have permission",
+			],
+			[
+				"I aren't have permission",
+				"I don't have permission",
+			],
+			[
+				"I isn't have permission",
+				"I don't have permission",
+			],
+			[
+				"I doesn't have permission",
+				"I don't have permission",
 			]
 		];
 	}
