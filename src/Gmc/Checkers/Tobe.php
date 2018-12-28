@@ -5,7 +5,7 @@ namespace Gmc\Checkers;
 use Gmc\CheckerFoundation;
 
 /**
- * @author Ammar Faizi <ammarfaizi2@gmail.com>
+ * @author Ammar Faizi <ammarfaizi2@gmail.com> https://www.facebook.com/ammarfaizi2
  * @license MIT
  * @version 0.0.1
  * @package \Gmc\Checkers
@@ -36,7 +36,7 @@ class Tobe extends CheckerFoundation
 			$text = implode("", $m);
 		}
 
-		while (preg_match("/(^|.*[\\s\\t]+)(she|he|it)([\\s\\t]+)(are)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
+		while (preg_match("/(^|.*[\\s\\t]+)(she|he|it)([\\s\\t]+)(are|am)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
 			unset($m[0]);
 			$m[4] = gmc_corrector("is");
 			$text = implode("", $m);

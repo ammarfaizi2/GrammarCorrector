@@ -14,5 +14,13 @@
         "files": [
             "src/helpers.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        },
+        "files": [
+            "tests/test_config.phpb"
+        ]
     }
 }
