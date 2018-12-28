@@ -24,9 +24,9 @@ class Tobe extends CheckerFoundation
 	{
 		$text = &$this->gmc->text;
 
-		while (preg_match("/(^|.*[\\s\\t]+)(you[\\s\\t]+)(is|am)([\\s\\t]+.*|$)/si", $text, $m)) {
+		while (preg_match("/(^|.*[\\s\\t]+)(you|we|they)([\\s\\t]+)(is|am)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
 			unset($m[0]);
-			$m[3] = gmc_corrector("are");
+			$m[4] = gmc_corrector("are");
 			$text = implode("", $m);
 		}
 
