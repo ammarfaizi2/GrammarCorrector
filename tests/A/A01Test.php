@@ -65,6 +65,10 @@ class A01Test extends TestCase
 				"You do not have permission",
 			],
 			[
+				"You do not have permission",
+				"You do not have permission",
+			],
+			[
 				"You aren't have permission",
 				"You don't have permission",
 			],
@@ -74,6 +78,10 @@ class A01Test extends TestCase
 			],
 			[
 				"You doesn't have permission",
+				"You don't have permission",
+			],
+			[
+				"You don't have permission",
 				"You don't have permission",
 			],
 
