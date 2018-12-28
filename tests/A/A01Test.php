@@ -17,6 +17,7 @@ class A01Test extends TestCase
 	public function h01SheHeItProvider(): array
 	{
 		return [
+			// He subject
 			[
 				"He are not have permission",
 				"He does not have permission"
@@ -40,6 +41,58 @@ class A01Test extends TestCase
 			[
 				"He don't have permission",
 				"He doesn't have permission"
+			],
+
+			// She subject
+			[
+				"She are not have permission",
+				"She does not have permission"
+			],
+			[
+				"She is not have permission",
+				"She does not have permission"
+			],
+			[
+				"She do not have the phone",
+				"She does not have the phone"
+			],
+			[
+				"She aren't have permission",
+				"She doesn't have permission"
+			],
+			[
+				"She isn't have permission",
+				"She doesn't have permission"
+			],
+			[
+				"She don't have permission",
+				"She doesn't have permission"
+			],
+
+			// It subject
+			[
+				"It are not have permission",
+				"It does not have permission"
+			],
+			[
+				"It is not have permission",
+				"It does not have permission"
+			],
+			[
+				"It do not have the phone",
+				"It does not have the phone"
+			],
+			[
+				"It aren't have permission",
+				"It doesn't have permission"
+			],
+			[
+				"It isn't have permission",
+				"It doesn't have permission"
+			],
+			[
+				"It don't have permission",
+				"It doesn't have permission"
 			]
 		];
 	}
