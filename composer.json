@@ -22,5 +22,8 @@
         "files": [
             "tests/test_config.phpb"
         ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
     }
 }
