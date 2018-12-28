@@ -56,6 +56,26 @@ class A01Test extends TestCase
 				"You are not have permission",
 				"You do not have permission"
 			],
+			[
+				"You is not have permission",
+				"You do not have permission",
+			],
+			[
+				"You does not have permission",
+				"You do not have permission",
+			],
+			[
+				"You aren't have permission",
+				"You don't have permission",
+			],
+			[
+				"You isn't have permission",
+				"You don't have permission",
+			],
+			[
+				"You doesn't have permission",
+				"You don't have permission",
+			]
 		];
 	}
 
