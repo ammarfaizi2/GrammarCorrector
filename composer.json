@@ -6,5 +6,13 @@
             "email": "ammarfaizi2@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"Gmc\\": "src/Gmc/"
+    	},
+        "files": [
+            "src/helpers.php"
+        ]
+    }
 }
