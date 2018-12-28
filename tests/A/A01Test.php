@@ -14,23 +14,43 @@ use PHPUnit\Framework\TestCase;
 class A01Test extends TestCase
 {
 
-	public function sheHeItProvider(): array
+	public function h01SheHeItProvider(): array
 	{
 		return [
 			[
-				"He do not have permission",
+				"He are not have permission",
 				"He does not have permission"
+			],
+			[
+				"He is not have permission",
+				"He does not have permission"
+			],
+			[
+				"He do not have the phone",
+				"He does not have the phone"
+			],
+			[
+				"He aren't have permission",
+				"He doesn't have permission"
+			],
+			[
+				"He isn't have permission",
+				"He doesn't have permission"
+			],
+			[
+				"He don't have the phone",
+				"He doesn't have permission"
 			]
 		];
 	}
 
 	/**
-	 * @dataProvider sheHeItProvider
+	 * @dataProvider h01SheHeItProvider
 	 * @param string $plainText
 	 * @param string $expectedResult
 	 * @return void
 	 */
-	public function testSheHeIt(string $plainText, string $expectedResult): void
+	public function testh01SheHeItProvider(string $plainText, string $expectedResult): void
 	{
 		$obj = new Gmc($plainText);
 		if ($obj->check()) {
