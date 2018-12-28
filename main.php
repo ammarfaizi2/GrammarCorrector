@@ -5,7 +5,7 @@ require __DIR__."/vendor/autoload.php";
 
 use Gmc\Gmc;
 
-$text = "You is beautiful.";
+$text = "He don't have permission";
 
 printf("Plain text:\n%s\n\n", $text);
 

@@ -24,9 +24,27 @@ class Tobe extends CheckerFoundation
 	{
 		$text = &$this->gmc->text;
 
-		while (preg_match("/(^|.*[\\s\\t]+)(you|we|they)([\\s\\t]+)(is|am)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
+		while (preg_match("/(^|.*[\\s\\t]+)(you|we|they)([\\s\\t]+)(is(n\'t)?|am)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
 			unset($m[0]);
 			$m[4] = gmc_corrector("are");
+			$text = implode("", $m);
+		}
+
+		while (preg_match("/(^|.*[\\s\\t]+)(you|we|they)([\\s\\t]+)(\*?are\*?(?:n\'t|[\\s\\t]+not))([\\s\\t]+)(have)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
+			unset($m[0]);
+			$m[4] = gmc_corrector("do");
+			$text = implode("", $m);
+		}
+
+		while (preg_match("/(^|.*[\\s\\t]+)(she|he|it)([\\s\\t]+)(are)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
+			unset($m[0]);
+			$m[4] = gmc_corrector("is");
+			$text = implode("", $m);
+		}
+
+		while (preg_match("/(^|.*[\\s\\t]+)(she|he|it)([\\s\\t]+)(\*?is\*?|do)(n\'t|[\\s\\t]+not)([\\s\\t]+)(have)([\\s\\t]+.*|$)/Ssi", $text, $m)) {
+			unset($m[0]);
+			$m[4] = gmc_corrector("does");
 			$text = implode("", $m);
 		}
 
