@@ -1,2 +1,8 @@
+*.o
+*.so
+*.tmp
+*.log
+*.swp
+*.swo
 /vendor/
 /.phpintel/
