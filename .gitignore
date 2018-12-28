@@ -4,5 +4,6 @@
 *.log
 *.swp
 *.swo
+*.lock
 /vendor/
 /.phpintel/
