@@ -26,13 +26,9 @@ class Tobe extends CheckerFoundation
 
 		while (preg_match("/(^|.*[\\s\\t]+)(you[\\s\\t]+)(is|am)([\\s\\t]+.*|$)/si", $text, $m)) {
 			unset($m[0]);
-			$m[3] = "are"
-
-			var_dump($m);
-			die;
+			$m[3] = gmc_corrector("are");
+			$text = implode("", $m);
 		}
-
-		var_dump($m);
 
 		return true;
 	}

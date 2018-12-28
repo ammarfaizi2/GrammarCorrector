@@ -37,7 +37,7 @@ final class Gmc
 	public function __construct(string $text)
 	{
 		$this->originText = $this->text = $text;
-		$this->text = strtolower($text);
+		$this->text = $text;
 	}
 
 	/**

@@ -5,7 +5,12 @@ require __DIR__."/vendor/autoload.php";
 
 use Gmc\Gmc;
 
-$text = "Hello bro, You is beautiful, you am great";
+$text = "You is beautiful";
+
+printf("Plain text:\n%s\n\n", $text);
+
+
+printf("Corrector Response:\n");
 $gmc = new Gmc($text);
 
 if ($gmc->check()) {
