@@ -38,7 +38,7 @@ class A01Test extends TestCase
 				"He doesn't have permission"
 			],
 			[
-				"He don't have the phone",
+				"He don't have permission",
 				"He doesn't have permission"
 			]
 		];
