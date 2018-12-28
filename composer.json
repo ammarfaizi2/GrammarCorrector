@@ -20,7 +20,7 @@
             "tests\\": "tests/"
         },
         "files": [
-            "tests/test_config.phpb"
+            "tests/test_config.php"
         ]
     },
     "require-dev": {
